@@ -1,9 +1,9 @@
 # snaptravelbc.github.io
-a website for a hackathon - try it out here! https://snaptravelbc.github.io
+A website for a hackathon - try it out here! https://snaptravelbc.github.io
 
 ![](https://raw.githubusercontent.com/snaptravelbc/snaptravelbc.github.io/main/devlog/devlog1.png)
 
-### what is this?
+### What is this?
 A website for making snap vacation plans. Do you have a group of friends and want to do something over the next hour? go to snaptravelbc.github.io, plan a trip, and leave right away!
 
 ### What the user enters?
