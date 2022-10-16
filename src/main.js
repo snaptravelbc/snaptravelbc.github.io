@@ -11,16 +11,17 @@ function startup() {
     var food = document.getElementById("food-box");
 
 
-    travel.innerHTML = "<p>travel</p>"
+    travel.innerHTML = "<h2>Travel</h2>"
     travel.innerHTML += card;
     travel.innerHTML += card;
     travel.innerHTML += card;
 
+    food.innerHTML = "<h2>Food</h2>"
     food.innerHTML = "<div style=\"margin: auto;\"class=\"lds-ripple\"><div></div><div></div></div>";
     
     // wait...
     
-    //food.innerHTML = "<p>travel</p>"
+    //food.innerHTML = "<p>food</p>"
     //food.innerHTML += card;
 }
 
