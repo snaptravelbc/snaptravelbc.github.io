@@ -53,7 +53,7 @@ function createLocationCard(weather, temperature, isBus, destination, timeToDest
 
     outstr += "<p style=\"font-size: 18px;\">" + destination + " — <span style=\"color: orange\">ETA: " + timeToDestinationMins + "</span> (" + distanceToDestination + ")</p>";
     //outstr += "<p style=\"float: right; font-size: 18px;\"><b>Leave in " + ((Math.abs(leaveAt - today) / 1000) / 60) + "m</b></p>"; // TODO: this
-    outstr += "<p style=\"font-size: 18px;\">" + weather + " | " + temperature +  "</p>";
+    outstr += "<p style=\"font-size: 18px;\">" + weather[0] + " | " + temperature +  "</p>";
 
     outstr += "</div>";
     
@@ -327,7 +327,7 @@ console.log("IN LOO 1 P");
           return;
         }
         console.log("IN LOOP");
-         let card = createLocationCard("Sunny", "40", "false", place.name, details.time, details.distance, details.time, details.distance);
+         let card = createLocationCard(userAction(place.geometry.location.lat, place.geometry.location.lng), "40", "false", place.name, details.time, details.distance, details.time, details.distance);
     let travel = document.getElementById("travel-box");
     let food = document.getElementById("food-box");
 
