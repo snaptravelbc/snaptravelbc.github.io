@@ -13,11 +13,8 @@ var bounds = new google.maps.LatLngBounds();
 //create map
 // var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 map = new google.maps.Map(document.getElementById('googleMap'), {
-    center: {
-        lat: -34.397,
-        lng: 150.644
-    },
-    zoom: 8
+    center: myLatLng,
+    zoom: 11
 })
 
 /**
