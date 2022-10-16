@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  background-color: #444;
+  font-family: OpenSans;
+}
+
+body {
+  height: 100%;
+  background-color: #444;
+  font-family: OpenSans;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+h2 {
+  font-family: OpenSans;
+}
+p {
+  font-family: OpenSans;
+}
+
+.location-card {
+  box-shadow: 0 2px 0 #06053240; 
+  border-radius: 8px; 
+  background-color: #fff; 
+
+  height: 96px; width: 100%; 
+  padding: 16px;
+}
+
+.location-card:hover {
+  box-shadow: 0 2px 0 #06053240; 
+  border-radius: 8px; 
+  background-color: #eee; 
+  
+  height: 96px; width: 100%; 
+  padding: 16px;
+}

@@ -1,11 +1,39 @@
-<html>
+<!doctype html>
+
+<html lang="en">
     <head>
         <title>Snap Travel BC</title>
-        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" \
+              integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
     </head>
     
     <body>
-        <h2>Snap Travel BC</h2>
-        <p>TODO: anything at all</p>
+        <p style="position: fixed; left: 24px; font-size: 11px; color: white;">Snap Travel BC</p>
+        <div style="border-radius: 8px; padding: 8px; float: left; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 160px; width: calc(20% - 16px - 16px); background-color: #ddd;">
+            <p>Settings:</p>
+    
+        </div>
+
+        <div style="float: left; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 320px; width: calc(40% - 16px);">
+            <div id="travel-box" style="border-radius: 8px; height: calc(50% - 8px); min-height: 64px; display: block; width: calc(100%); margin-bottom: 16px; padding: 8px; background-color: #ddd; overflow:scroll;">
+                <p>Travel:</p>
+
+            </div>
+
+            <div id="food-box" style="border-radius: 8px; height: calc(50% - 8px); min-height: 64px; display: block; width: calc(100%); margin-bottom: 16px; padding: 8px; background-color: #ddd; overflow:scroll;">
+                <p>Food:</p>
+                
+            </div>
+        </div>
+
+        <div style="border-radius: 8px; float: left; padding: 8px; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 320px; width: calc(40% - 16px); background-color: #ddd;">
+            <h2>Snap Travel BC:</h2>
+            <p>Set a home destination</p>
+
+        </div>
+
+        <script src="src/main.js"></script>
+        
     </body>
 </html>
