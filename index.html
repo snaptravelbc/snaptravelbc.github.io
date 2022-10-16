@@ -6,28 +6,39 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" \
               integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="ripple.css">
     </head>
     
     <body>
         <p style="position: fixed; left: 24px; font-size: 11px; color: white;">Snap Travel BC</p>
-        <div style="border-radius: 8px; padding: 8px; float: left; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 160px; width: calc(20% - 16px - 16px); background-color: #ddd;">
+        <div style="border-radius: 8px; padding: 8px; float: left; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 160px; width: calc(20% - 16px - 16px); background-color:#dddc;">
             <p>Settings:</p>
-    
+            <hr>
+            <label for="stay-length">How long do you want to stay for?</label>
+            
+            <div>
+                <p style="display: inline-block; float: left;">(1)&nbsp;</p> 
+                <input style="display: inline-block; float: left; width: calc(100% - 12rem)"type="range" min="1" max="6" value="2" class="slider" id="stay-length" oninput="this.nextElementSibling.value = this.value + ' hours'"> 
+                <output style="float: right; margin-top: 0;">2 hours</output>
+                </p style="display: inline-block; float: left;">&nbsp;(6)</p>
+            </div>
+
+            
         </div>
 
         <div style="float: left; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 320px; width: calc(40% - 16px);">
-            <div id="travel-box" style="border-radius: 8px; height: calc(50% - 8px); min-height: 64px; display: block; width: calc(100%); margin-bottom: 16px; padding: 8px; background-color: #ddd; overflow:scroll;">
+            <div id="travel-box" style="text-align: center;border-radius: 8px; height: calc(50% - 8px); min-height: 64px; display: block; width: calc(100%); margin-bottom: 16px; padding: 8px; background-color: #dddc; overflow:scroll;">
                 <p>Travel:</p>
 
             </div>
 
-            <div id="food-box" style="border-radius: 8px; height: calc(50% - 8px); min-height: 64px; display: block; width: calc(100%); margin-bottom: 16px; padding: 8px; background-color: #ddd; overflow:scroll;">
+            <div id="food-box" style="text-align: center; border-radius: 8px; height: calc(50% - 8px); min-height: 64px; display: block; width: calc(100%); margin-bottom: 16px; padding: 8px; background-color: #dddc; overflow:scroll;">
                 <p>Food:</p>
                 
             </div>
         </div>
 
-        <div style="border-radius: 8px; float: left; padding: 8px; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 320px; width: calc(40% - 16px); background-color: #ddd;">
+        <div style="border-radius: 8px; float: left; padding: 8px; margin: 16px 0 16px 16px; height: calc(100% - 16px - 16px); min-width: 320px; width: calc(40% - 16px); background-color: #dddc;">
             <h2>Snap Travel BC:</h2>
             <p>Set a home destination</p>
 

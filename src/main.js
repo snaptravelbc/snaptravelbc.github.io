@@ -10,10 +10,18 @@ function startup() {
     var travel = document.getElementById("travel-box");
     var food = document.getElementById("food-box");
 
+
+    travel.innerHTML = "<p>travel</p>"
     travel.innerHTML += card;
     travel.innerHTML += card;
     travel.innerHTML += card;
-    food.innerHTML += card;
+
+    food.innerHTML = "<div style=\"margin: auto;\"class=\"lds-ripple\"><div></div><div></div></div>";
+    
+    // wait...
+    
+    //food.innerHTML = "<p>travel</p>"
+    //food.innerHTML += card;
 }
 
 function fetchData() {
@@ -31,9 +39,9 @@ function createLocationCard(weather, temperature, isBus, destination, timeToDest
 
     outstr += "<div class=\"location-card\" style=\"margin-bottom: 16px;\">";
     outstr += "<p style=\"float: right; font-size: 18px;\"><b>" + (isBus ? "(bus)" : "(walking)") + "</b></p>";
-    outstr += "<p style=\"font-size: 18px;\">" + destination + " — trip length: " + totalTime + "m — ETA: " + timeToDestinationMins + "m (" + distanceToDestination + ")</p>";
+    outstr += "<p style=\"font-size: 18px; float: left;\">" + destination + " — trip length: " + totalTime + "m — ETA: " + timeToDestinationMins + "m (" + distanceToDestination + ")</p>";
     outstr += "<p style=\"float: right; font-size: 18px;\"><b>Leave in " + ((Math.abs(leaveAt - today) / 1000) / 60) + "m</b></p>"; // TODO: this
-    outstr += "<p style=\"font-size: 18px;\">" + weather + " | " + temperature +  "</p>";
+    outstr += "<p style=\"font-size: 18px; float: left;\">" + weather + " | " + temperature +  "</p>";
     outstr += "</div>";
     
     return outstr;
@@ -62,7 +70,6 @@ function showError(error) {
         break;
     }
 }
-
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.watchPosition(showPosition, showError, {maximumAge: 2000, timeout: 5000, enableHighAccuracy: true});
@@ -70,6 +77,10 @@ function getLocation() {
         console.log("Geolocation is not supported by this browser.");
     }
 }
+
+// ---------------------------- //
+// event functions
+
 
 // ---------------------------- //
 // setup

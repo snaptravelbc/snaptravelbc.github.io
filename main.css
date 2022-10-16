@@ -7,7 +7,9 @@ html {
 body {
   height: 100%;
   background-color: #444;
+  background-image: url('res/bc-gradient.jpg');
   font-family: OpenSans;
+  
 }
 
 @font-face {
@@ -38,4 +40,12 @@ p {
   
   height: 96px; width: 100%; 
   padding: 16px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #222;
+  color: #222;
+  margin: 2px 0 16px 0;
 }
