@@ -1,6 +1,22 @@
 
 let timeAtDestinationMins = 60;
 
+let cors = "https://unique-shoe.glitch.me/"
+
+// api call to get weather info from lat lng
+async function userAction(lat, lng) {
+  const response = await fetch(cors+'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lng+'&appid=9b4544f441703c4586ea9c71d952ea5e', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  return response.json();
+    //console.log(data.weather[0].main)
+    //document.getElementById("sky").innerHTML = data.weather[0].main
+    //document.getElementById("temp").innerHTML = data.main.temp-273.15
+}
+
 // ----------------------------- // 
 
 function startup() {
